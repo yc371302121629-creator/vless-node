@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: xray-vless-node
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore
+    envVars:
+      - key: UUID
+        sync: false
